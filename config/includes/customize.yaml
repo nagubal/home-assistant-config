@@ -1,0 +1,10 @@
+light.cuisine:
+  icon: mdi:ceiling-light
+light.lampe_cuisine:
+  icon: mdi:ceiling-light
+light.sejour:
+  icon: mdi:ceiling-light
+light.palier:
+  icon: mdi:ceiling-light
+person.anthony:
+  entity_picture: https://nagubal.fr/anthony.jpg

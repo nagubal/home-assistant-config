@@ -1,0 +1,4 @@
+- platform: mqtt
+  name: "Température séjour"
+  unit_of_measurement: '°C'
+  state_topic: 'home/sensor/38/temp'

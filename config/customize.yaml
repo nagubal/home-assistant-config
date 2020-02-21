@@ -1,0 +1,10 @@
+switch.sentinelle:
+  icon: mdi:shield-key
+light.cuisine:
+  icon: mdi:ceiling-light
+light.sejour:
+  icon: mdi:ceiling-light
+person.anthony:
+  entity_picture: https://nagubal.fr/anthony.jpg
+light.palier:
+  icon: mdi:ceiling-light

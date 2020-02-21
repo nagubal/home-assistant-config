@@ -1,0 +1,134 @@
+- platform: mqtt
+  name: "Volet cuisine hotte"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_11/set"
+  position_topic: "home/volet/dz_switch_11/position"
+  set_position_topic: "home/volet/dz_switch_11/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false
+
+- platform: mqtt
+  name: "Volet canapé"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_53/set"
+  position_topic: "home/volet/dz_switch_53/position"
+  set_position_topic: "home/volet/dz_switch_53/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false
+  
+- platform: mqtt
+  name: "Volet aquarium"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_65/set"
+  position_topic: "home/volet/dz_switch_65/position"
+  set_position_topic: "home/volet/dz_switch_65/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false
+  
+- platform: mqtt
+  name: "Volet cuisine évier"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_70/set"
+  position_topic: "home/volet/dz_switch_70/position"
+  set_position_topic: "home/volet/dz_switch_70/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false
+
+- platform: mqtt
+  name: "Volet chambre parentale"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_83/set"
+  position_topic: "home/volet/dz_switch_83/position"
+  set_position_topic: "home/volet/dz_switch_83/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false
+  
+- platform: mqtt
+  name: "Volet salle de jeux"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_103/set"
+  position_topic: "home/volet/dz_switch_103/position"
+  set_position_topic: "home/volet/dz_switch_103/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false
+  
+- platform: mqtt
+  name: "Volet chambre Aelig"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_108/set"
+  position_topic: "home/volet/dz_switch_108/position"
+  set_position_topic: "home/volet/dz_switch_108/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false
+  
+- platform: mqtt
+  name: "Volet chambre Erell"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_116/set"
+  position_topic: "home/volet/dz_switch_116/position"
+  set_position_topic: "home/volet/dz_switch_116/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false
+
+- platform: mqtt
+  name: "Volet arrière-cuisine"
+  device_class: "shutter"
+  command_topic: "home/volet/dz_switch_193/set"
+  position_topic: "home/volet/dz_switch_193/position"
+  set_position_topic: "home/volet/dz_switch_193/set_position"
+  payload_open: "OPEN"
+  payload_close: "CLOSE"
+  #payload_stop: "STOP"
+  position_open: 0
+  position_closed: 100
+  tilt_invert_state: true
+  optimistic: false
+  retain: false

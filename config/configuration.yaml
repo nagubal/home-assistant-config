@@ -1,0 +1,81 @@
+homeassistant:
+  name: !secret name
+  #credential_secret: !secret credential_secret
+  time_zone: !secret timezone
+  latitude: !secret latitude
+  longitude: !secret longitude
+  unit_system: metric
+  elevation: 61
+  customize: !include includes/customize.yaml
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+group: !include includes/groups.yaml
+script: !include includes/scripts.yaml
+scene: !include includes/scenes.yaml
+sensor: !include includes/sensor.yaml
+light: !include includes/light.yaml
+binary_sensor: !include includes/binary_sensor.yaml
+switch: !include includes/switch.yaml
+cover: !include includes/cover.yaml
+
+# MQTT Broker
+mqtt: 
+  broker: !secret broker
+  port: !secret broker_port
+  username: !secret broker_user
+  password: !secret broker_pwd
+
+# Cameras
+amcrest:
+  - host: !secret amcrest_url
+    name: Amcrest Salon
+    username: !secret amcrest_user
+    password: !secret amcrest_pwd
+    resolution: low
+
+camera:
+  - platform: foscam
+    ip: !secret foscam_url
+    port: 88
+    username: !secret foscam_user
+    password: !secret foscam_pwd
+
+# Services
+wake_on_lan:
+
+samsungtv:
+  - host: !secret samsungtv_ip
+    turn_on_action:
+      - service: wake_on_lan.send_magic_packet
+        data:
+          mac: !secret samsungtv_mac
+          #broadcast_address: "192.168.1.255"
+
+media_player:
+  - platform: kodi
+    host: !secret kodi_ip
+    turn_on_action:
+      - service: wake_on_lan.send_magic_packet
+        data:
+          mac: !secret kodi_mac
+          broadcast_address: 192.168.1.255
+
+# %vm5Ke%jE#c2TN89oA6zk6W%
+unifi:
+  controllers:
+    - host: !secret unifi_ip
+      site: default
+      dont_track_wired_clients: true
+      ssid_filter:
+        - !secret ssid_filter_1

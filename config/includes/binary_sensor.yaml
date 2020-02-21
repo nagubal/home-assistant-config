@@ -1,0 +1,13 @@
+- platform: mqtt
+  name: "Présence séjour"
+  state_topic: "home/binary_sensor/dz_binary_36/state"
+  payload_off: "Off"
+  payload_on: "On"
+  device_class: motion
+
+- platform: mqtt
+  name: "Garage"
+  state_topic: "home/binary_sensor/dz_binary_298/state"
+  payload_off: "Off"
+  payload_on: "On"
+  device_class: garage_door

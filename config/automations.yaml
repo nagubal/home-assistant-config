@@ -1,0 +1,26 @@
+- id: temp-from-domoticz
+  alias: DZ temp
+  trigger:
+  - platform: mqtt
+    topic: domoticz/out
+  condition:
+    condition: template
+    value_template: '{{ trigger.payload_json.dtype == "Temp" }}'
+  action:
+  - service: mqtt.publish
+    data_template:
+      topic: home/sensor/{{ trigger.payload_json.idx }}/temp
+      payload_template: '{{ trigger.payload_json.svalue1 }}'
+- id: '1581261658616'
+  alias: Request location update
+  description: ''
+  trigger:
+  - entity_id: person.anthony
+    event: enter
+    platform: zone
+    zone: zone.home
+  condition: []
+  action:
+  - data:
+      message: request_location_update
+    service: notify.mobile_app_iphone_6
