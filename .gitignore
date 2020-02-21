@@ -21,3 +21,5 @@ config/*.pem
 config/options.xml
 config/secrets.yaml
 config/*.csr
+config/mqtt-ca.srl
+config/client.csr
