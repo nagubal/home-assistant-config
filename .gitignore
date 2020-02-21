@@ -11,6 +11,7 @@ __pycache__
 config/.cloud
 config/.storage
 config/deps
+config/tts
 
 # Specific file ignores
 config/*.crt
@@ -19,3 +20,4 @@ config/*.crl
 config/*.pem
 config/options.xml
 config/secrets.yaml
+config/*.csr
