@@ -6,7 +6,7 @@ homeassistant:
   longitude: !secret longitude
   unit_system: metric
   elevation: 61
-  customize: !include includes/customize.yaml
+  customize: !include customize.yaml
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
