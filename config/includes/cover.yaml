@@ -1,5 +1,5 @@
 - platform: mqtt
-  name: "Volet cuisine hotte"
+  name: "cuisine hotte"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_11/set"
   position_topic: "home/volet/dz_switch_11/position"
@@ -14,7 +14,7 @@
   retain: false
 
 - platform: mqtt
-  name: "Volet canapé"
+  name: "canapé"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_53/set"
   position_topic: "home/volet/dz_switch_53/position"
@@ -29,7 +29,7 @@
   retain: false
   
 - platform: mqtt
-  name: "Volet aquarium"
+  name: "aquarium"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_65/set"
   position_topic: "home/volet/dz_switch_65/position"
@@ -44,7 +44,7 @@
   retain: false
   
 - platform: mqtt
-  name: "Volet cuisine évier"
+  name: "cuisine évier"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_70/set"
   position_topic: "home/volet/dz_switch_70/position"
@@ -59,7 +59,7 @@
   retain: false
 
 - platform: mqtt
-  name: "Volet chambre parentale"
+  name: "chambre parentale"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_83/set"
   position_topic: "home/volet/dz_switch_83/position"
@@ -74,7 +74,7 @@
   retain: false
   
 - platform: mqtt
-  name: "Volet salle de jeux"
+  name: "salle de jeux"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_103/set"
   position_topic: "home/volet/dz_switch_103/position"
@@ -89,7 +89,7 @@
   retain: false
   
 - platform: mqtt
-  name: "Volet chambre Aelig"
+  name: "chambre Aelig"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_108/set"
   position_topic: "home/volet/dz_switch_108/position"
@@ -104,7 +104,7 @@
   retain: false
   
 - platform: mqtt
-  name: "Volet chambre Erell"
+  name: "chambre Erell"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_116/set"
   position_topic: "home/volet/dz_switch_116/position"
@@ -119,7 +119,7 @@
   retain: false
 
 - platform: mqtt
-  name: "Volet arrière-cuisine"
+  name: "arrière-cuisine"
   device_class: "shutter"
   command_topic: "home/volet/dz_switch_193/set"
   position_topic: "home/volet/dz_switch_193/position"

@@ -78,3 +78,6 @@ unifi:
       dont_track_wired_clients: true
       ssid_filter:
         - !secret ssid_filter_1
+
+hacs:
+  token: !secret hacs_github_token
