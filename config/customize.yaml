@@ -6,7 +6,7 @@ light.cuisine:
 light.sejour:
   icon: mdi:ceiling-light
 person.anthony:
-  entity_picture: https://nagubal.fr/anthony.jpg
+  entity_picture: !secret anthony_img
 light.palier:
   icon: mdi:ceiling-light
 light.lampe_cuisine:
