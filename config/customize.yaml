@@ -6,9 +6,15 @@ light.cuisine:
 light.sejour:
   icon: mdi:ceiling-light
 person.anthony:
-  entity_picture: !secret anthony_img
+  entity_picture: https://nagubal.fr/anthony.jpg
 light.palier:
   icon: mdi:ceiling-light
 light.lampe_cuisine:
   friendly_name: Cuisine
   icon: mdi:ceiling-light
+sensor.capteur_escalier_temperature:
+  friendly_name: Escalier
+sensor.capteur_palier_temperature:
+  friendly_name: Palier
+sensor.temperature_sejour:
+  friendly_name: Séjour
