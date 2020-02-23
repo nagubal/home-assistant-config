@@ -1,10 +1,12 @@
 switch.sentinelle:
   icon: mdi:shield-key
+light.lampadaire:
+  icon: mdi:floor-lamp
 light.cuisine:
   friendly_name: Cuisine
   icon: mdi:ceiling-light
 light.sejour:
-  icon: mdi:ceiling-light
+  icon: mdi:vanity-light
 person.anthony:
   entity_picture: https://nagubal.fr/anthony.jpg
 light.palier:
@@ -18,3 +20,5 @@ sensor.capteur_palier_temperature:
   friendly_name: Palier
 sensor.temperature_sejour:
   friendly_name: Séjour
+light.lampe_ile_de_re:
+  icon: mdi:lamp
