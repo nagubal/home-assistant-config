@@ -9,7 +9,7 @@ steps:
       - yamllint config/
 
   - name: "HA config check"
-    image: homeassistant/homeassistant
+    image: homeassistant/amd64-homeassistant
     commands:
       - echo "Preparing ..."
       - cp config/.drone_secrets.yaml config/secrets.yaml
@@ -40,7 +40,7 @@ name: Home Assistant Dev
 
 steps:
   - name: "HA config check: Dev"
-    image: homeassistant/homeassistant:dev
+    image: homeassistant/amd64-homeassistant:dev
     pull: always
     failure: ignore
     commands:
