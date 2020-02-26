@@ -59,13 +59,15 @@ depends_on:
 steps:
   - name: "Telegram notification"
     image: appleboy/drone-telegram
+    when:
+      status: [ success, failure ]
     settings:
       token:
         from_secret: telegram-redbeard-token
       to:
         from_secret: telegram-chatid
-      when:
-        status: [ success, failure ]
+#      when:
+#        status: [ success, failure ]
       format: markdown
       message: >
         {{#success build.status}}
