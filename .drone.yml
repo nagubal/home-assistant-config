@@ -7,6 +7,7 @@ steps:
     commands:
       - pip3 install --upgrade pip yamllint
       - yamllint config/
+
   - name: "HA config check"
     image: homeassistant/amd64-homeassistant
     commands:
@@ -16,3 +17,18 @@ steps:
       - hass -c config/ --script check_config
       - echo "Cleaning up ..."
       - rm config/secrets.yaml
+
+  - name: push-github
+    pull: always
+    image: appleboy/drone-git-push
+    settings:
+      branch: master
+      author_email: "45527+nagubal@users.noreply.github.com"
+      author_name: nagubal
+      commit: true
+      commit_message: "{{commit.message}}"
+      followtags: true
+      remote: "git@github.com:nagubal/home-assistant-config.git"
+    environment:
+      GIT_PUSH_SSH_KEY:
+        from_secret: git_push_ssh_key
