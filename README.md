@@ -1,4 +1,4 @@
-![Home Assistant Logo](https://github.com/nagubal/home-assistant-config/blob/master/config/images/ha.png "Home Assistant Logo")
+![Home Assistant Logo](/config/images/ha.png?raw=true "Home Assistant Logo")
 
 # Home Assistant Configuration
 
