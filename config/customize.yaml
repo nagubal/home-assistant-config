@@ -22,3 +22,9 @@ sensor.temperature_sejour:
   friendly_name: Séjour
 light.lampe_ile_de_re:
   icon: mdi:lamp
+switch.sp111_01_switch:
+  friendly_name: Ampli
+  icon: mdi:audio-video
+switch.sp111_02_switch:
+  friendly_name: "Chevet Anthony"
+  icon: mdi:lamp

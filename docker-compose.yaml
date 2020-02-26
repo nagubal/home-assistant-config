@@ -7,5 +7,7 @@ services:
       - ./config:/config
     environment:
       - TZ=Europe/Paris
+    ports:
+      - 8123:8123
     restart: always
     network_mode: host
