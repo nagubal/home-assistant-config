@@ -9,6 +9,6 @@ services:
     environment:
       - TZ=Europe/Paris
     ports:
-      - 8123:8123
+      - "8123:8123"
     restart: unless-stopped 
     network_mode: host
