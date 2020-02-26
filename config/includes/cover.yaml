@@ -26,7 +26,7 @@
   tilt_invert_state: true
   optimistic: false
   retain: false
-  
+
 - platform: mqtt
   name: "Aquarium"
   device_class: "shutter"
@@ -40,7 +40,7 @@
   tilt_invert_state: true
   optimistic: false
   retain: false
-  
+
 - platform: mqtt
   name: "Cuisine évier"
   device_class: "shutter"
@@ -68,7 +68,7 @@
   tilt_invert_state: true
   optimistic: false
   retain: false
-  
+ 
 - platform: mqtt
   name: "Salle de jeux"
   device_class: "shutter"
@@ -82,7 +82,7 @@
   tilt_invert_state: true
   optimistic: false
   retain: false
-  
+ 
 - platform: mqtt
   name: "Chambre Aelig"
   device_class: "shutter"
@@ -96,7 +96,7 @@
   tilt_invert_state: true
   optimistic: false
   retain: false
-  
+ 
 - platform: mqtt
   name: "Chambre Erell"
   device_class: "shutter"
