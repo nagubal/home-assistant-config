@@ -1,5 +1,5 @@
 kind: pipeline
-name: Home Assistant 
+name: home-assistant 
 
 steps:
   - name: yaml-linting
@@ -36,7 +36,7 @@ steps:
 ---
 
 kind: pipeline
-name: Home Assistant Dev 
+name: home-assistant-dev 
 
 steps:
   - name: "HA config check: dev branch"
@@ -50,3 +50,42 @@ steps:
       - hass -c config/ --script check_config
       - echo "Cleaning up ..."
       - rm config/secrets.yaml
+
+---
+kind: pipeline
+name: Telegram notification
+depends_on:
+  - home-assistant
+steps:
+  - name: "Telegram notification"
+    image: appleboy/drone-telegram
+    secrets: [ telegram-redbeard-token, telegram-chatid ]
+    when:
+      status: [ success, failure ]
+    format: markdown
+    message: >
+      {{#success build.status}}
+      ✅ Build #{{build.number}} of `{{repo.name}}` succeeded.
+
+
+      📝 Commit by {{commit.author}} on `{{commit.branch}}`:
+
+      ```
+      {{commit.message}}
+      ```
+
+
+      🌐 {{ build.link }}
+      {{else}}
+      ❌ Build #{{build.number}} of `{{repo.name}}` failed.
+
+
+      📝 Commit by {{commit.author}} on `{{commit.branch}}`:
+
+      ```
+      {{commit.message}}
+      ```
+
+
+      🌐 {{ build.link }}
+      {{/success}}
