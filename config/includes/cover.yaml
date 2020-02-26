@@ -7,7 +7,6 @@
   set_position_topic: "home/volet/dz_switch_11/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true
@@ -22,7 +21,6 @@
   set_position_topic: "home/volet/dz_switch_53/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true
@@ -37,7 +35,6 @@
   set_position_topic: "home/volet/dz_switch_65/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true
@@ -52,7 +49,6 @@
   set_position_topic: "home/volet/dz_switch_70/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true
@@ -67,7 +63,6 @@
   set_position_topic: "home/volet/dz_switch_83/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true
@@ -82,7 +77,6 @@
   set_position_topic: "home/volet/dz_switch_103/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true
@@ -97,7 +91,6 @@
   set_position_topic: "home/volet/dz_switch_108/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true
@@ -112,7 +105,6 @@
   set_position_topic: "home/volet/dz_switch_116/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true
@@ -127,7 +119,6 @@
   set_position_topic: "home/volet/dz_switch_193/set_position"
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  #payload_stop: "STOP"
   position_open: 0
   position_closed: 100
   tilt_invert_state: true

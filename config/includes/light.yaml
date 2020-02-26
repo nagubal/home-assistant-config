@@ -4,4 +4,4 @@
   command_topic: "home/light/dz_switch_345/power"
   state_topic: "home/light/dz_switch_345/state"
   payload_off: "Off"
-  payload_on: "On" 
+  payload_on: "On"

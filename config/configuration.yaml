@@ -1,7 +1,6 @@
 ---
 homeassistant:
   name: !secret name
-  #credential_secret: !secret credential_secret
   time_zone: !secret timezone
   latitude: !secret latitude
   longitude: !secret longitude
@@ -28,7 +27,7 @@ switch: !include includes/switch.yaml
 cover: !include includes/cover.yaml
 
 # MQTT Broker
-mqtt: 
+mqtt:
   broker: !secret broker
   port: !secret broker_port
   username: !secret broker_user
@@ -53,12 +52,12 @@ camera:
 wake_on_lan:
 
 samsungtv:
-  - host: !secret samsungtv_ip 
+  - host: !secret samsungtv_ip
     turn_on_action:
       - service: wake_on_lan.send_magic_packet
         data:
           mac: !secret samsungtv_mac
-          #broadcast_address: "192.168.1.255"
+          broadcast_address: 192.168.1.255
 
 media_player:
   - platform: kodi
