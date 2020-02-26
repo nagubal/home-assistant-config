@@ -39,14 +39,14 @@ kind: pipeline
 name: Home Assistant Dev 
 
 steps:
-  - name: "HA config check: Dev"
+  - name: "HA config check: dev branch"
     image: homeassistant/amd64-homeassistant:dev
     pull: always
     failure: ignore
     commands:
       - echo "Preparing ..."
       - cp config/.drone_secrets.yaml config/secrets.yaml
-      - echo "Testing Home Assistant config ..."
+      - echo "Testing Home Assistant config on dev branch..."
       - hass -c config/ --script check_config
       - echo "Cleaning up ..."
       - rm config/secrets.yaml
