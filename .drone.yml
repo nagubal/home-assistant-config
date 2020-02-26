@@ -1,8 +1,13 @@
 kind: pipeline
-name: default
+name: Home Assistant 
 
 steps:
-  - name: test
+  - name: yaml-linting
+    image: python:3
+    commands:
+      - pip3 install --upgrade pip yamllint
+      - yamllint config/
+  - name: "HA config check"
     image: homeassistant/amd64-homeassistant
     commands:
       - echo "Preparing ..."
