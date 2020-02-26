@@ -12,7 +12,7 @@ steps:
     image: homeassistant/homeassistant
     commands:
       - echo "Preparing ..."
-      - cp config/drone_secrets.yaml config/secrets.yaml
+      - cp config/.drone_secrets.yaml config/secrets.yaml
       - echo "Testing Home Assistant config ..."
       - hass -c config/ --script check_config
       - echo "Cleaning up ..."
