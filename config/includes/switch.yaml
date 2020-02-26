@@ -1,3 +1,4 @@
+---
 - platform: mqtt
   name: "Sentinelle"
   command_topic: "home/light/dz_switch_198/power"

@@ -1,3 +1,4 @@
+---
 - platform: mqtt
   name: "Cuisine hotte"
   device_class: "shutter"

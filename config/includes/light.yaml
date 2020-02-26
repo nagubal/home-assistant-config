@@ -1,3 +1,4 @@
+---
 - platform: mqtt
   name: "Guirlande"
   command_topic: "home/light/dz_switch_345/power"
