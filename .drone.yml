@@ -14,7 +14,7 @@ steps:
       - echo "Preparing ..."
       - cp config/drone_secrets.yaml config/secrets.yaml
       - echo "Testing Home Assistant config ..."
-      - hass -c config/ --skip-pip --script check_config
+      - hass -c config/ --script check_config
       - echo "Cleaning up ..."
       - rm config/secrets.yaml
 
