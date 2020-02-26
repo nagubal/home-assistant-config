@@ -9,7 +9,7 @@ steps:
       - yamllint config/
 
   - name: "HA config check"
-    image: homeassistant/amd64-homeassistant
+    image: homeassistant/homeassistant
     commands:
       - echo "Preparing ..."
       - cp config/drone_secrets.yaml config/secrets.yaml
@@ -32,3 +32,21 @@ steps:
     environment:
       GIT_PUSH_SSH_KEY:
         from_secret: git_push_ssh_key
+
+---
+
+kind: pipeline
+name: Home Assistant Dev 
+
+steps:
+  - name: "HA config check: Dev"
+    image: homeassistant/homeassistant:dev
+    pull: always
+    failure: ignore
+    commands:
+      - echo "Preparing ..."
+      - cp config/drone_secrets.yaml config/secrets.yaml
+      - echo "Testing Home Assistant config ..."
+      - hass -c config/ --script check_config
+      - echo "Cleaning up ..."
+      - rm config/secrets.yaml
