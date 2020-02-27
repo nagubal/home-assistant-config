@@ -44,7 +44,7 @@ amcrest:
 camera:
   - platform: foscam
     ip: !secret foscam_url
-    port: 88
+    port: !secret foscam_port
     username: !secret foscam_user
     password: !secret foscam_pwd
 
@@ -57,7 +57,7 @@ samsungtv:
       - service: wake_on_lan.send_magic_packet
         data:
           mac: !secret samsungtv_mac
-          broadcast_address: 192.168.1.255
+          broadcast_address: !secret wol_broadcast_address
 
 media_player:
   - platform: kodi
@@ -66,7 +66,7 @@ media_player:
       - service: wake_on_lan.send_magic_packet
         data:
           mac: !secret kodi_mac
-          broadcast_address: 192.168.1.255
+          broadcast_address: !secret wol_broadcast_address
 
 unifi:
   controllers:
