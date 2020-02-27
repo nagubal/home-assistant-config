@@ -17,4 +17,3 @@
   name: esp32_garage_state
   state_topic: "esp32_garage/binary_sensor/garage/state"
   device_class: garage_door
-  
