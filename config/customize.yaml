@@ -29,3 +29,5 @@ switch.sp111_01_switch:
 switch.sp111_02_switch:
   friendly_name: "Chevet Anthony"
   icon: mdi:lamp
+binary_sensor.esp32_garage_state:
+  friendly_name: "Garage"
