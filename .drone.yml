@@ -60,7 +60,9 @@ steps:
   - name: "Telegram notification"
     image: appleboy/drone-telegram
     when:
-      status: [ success, failure ]
+      status: 
+        - success
+        - failure
     settings:
       token:
         from_secret: telegram-redbeard-token
