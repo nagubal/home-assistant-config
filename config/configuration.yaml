@@ -5,7 +5,7 @@ homeassistant:
   latitude: !secret latitude
   longitude: !secret longitude
   unit_system: metric
-  elevation: 61
+  elevation: !secret elevation
   customize: !include customize.yaml
 
 # Configure a default setup of Home Assistant (frontend, api, etc)
@@ -16,8 +16,8 @@ default_config:
 #   base_url: example.duckdns.org:8123
 
 # Text to speech
-tts:
-  - platform: google_translate
+# tts:
+#  - platform: google_translate
 
 automation: !include automations.yaml
 sensor: !include includes/sensor.yaml
