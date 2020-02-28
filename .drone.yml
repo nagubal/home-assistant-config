@@ -34,22 +34,22 @@ steps:
 
 ---
 
-kind: pipeline
-name: home-assistant-dev 
-depends_on:
-  - home-assistant
-steps:
-  - name: "HA config check: dev branch"
-    image: homeassistant/home-assistant:dev
-    pull: always
-    failure: ignore
-    commands:
-      - echo "Preparing ..."
-      - cp config/.drone_secrets.yaml config/secrets.yaml
-      - echo "Testing Home Assistant config on dev branch..."
-      - hass -c config/ --script check_config
-      - echo "Cleaning up ..."
-      - rm config/secrets.yaml
+# kind: pipeline
+# name: home-assistant-dev
+# depends_on:
+#   - home-assistant
+# steps:
+#   - name: "HA config check: dev branch"
+#     image: homeassistant/home-assistant:dev
+#     pull: always
+#     failure: ignore
+#     commands:
+#       - echo "Preparing ..."
+#       - cp config/.drone_secrets.yaml config/secrets.yaml
+#       - echo "Testing Home Assistant config on dev branch..."
+#       - hass -c config/ --script check_config
+#       - echo "Cleaning up ..."
+#       - rm config/secrets.yaml
 
 ---
 kind: pipeline
