@@ -9,7 +9,7 @@ steps:
       - yamllint config/
 
   - name: "HA config check"
-    image: homeassistant/amd64-homeassistant
+    image: homeassistant/home-assistant
     commands:
       - echo "Preparing ..."
       - cp config/.drone_secrets.yaml config/secrets.yaml
@@ -36,10 +36,11 @@ steps:
 
 kind: pipeline
 name: home-assistant-dev 
-
+depends_on:
+  - home-assistant
 steps:
   - name: "HA config check: dev branch"
-    image: homeassistant/amd64-homeassistant:dev
+    image: homeassistant/home-assistant:dev
     pull: always
     failure: ignore
     commands:
