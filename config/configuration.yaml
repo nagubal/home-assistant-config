@@ -29,6 +29,7 @@ mqtt:
   username: !secret broker_user
   password: !secret broker_pwd
 
+##########
 # Cameras
 amcrest:
   - host: !secret amcrest_url
@@ -44,6 +45,7 @@ camera:
     username: !secret foscam_user
     password: !secret foscam_pwd
 
+###########
 # Services
 wake_on_lan:
 
