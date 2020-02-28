@@ -1,4 +1,5 @@
 ---
+# MQTT covers: les volets Z-Wave gérés directement dans Domoticz  
 - platform: mqtt
   name: "Cuisine hotte"
   device_class: "shutter"
