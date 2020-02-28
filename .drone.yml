@@ -87,5 +87,5 @@ steps:
         {{/success}}
 trigger:
   status:
-    - success
+    #- success
     - failure
