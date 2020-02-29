@@ -13,6 +13,7 @@
   payload_on: "On"
   device_class: garage_door
 
+# ESP32 connected to a garage door reed switch
 - platform: mqtt
   name: esp32_garage_state
   state_topic: "esp32_garage/binary_sensor/garage/state"

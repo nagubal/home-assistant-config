@@ -15,10 +15,6 @@ default_config:
 # http:
 #   base_url: example.duckdns.org:8123
 
-# Text to speech
-# tts:
-#  - platform: google_translate
-
 automation: !include automations.yaml
 sensor: !include includes/sensor.yaml
 light: !include includes/light.yaml
@@ -33,6 +29,7 @@ mqtt:
   username: !secret broker_user
   password: !secret broker_pwd
 
+##########
 # Cameras
 amcrest:
   - host: !secret amcrest_url
@@ -48,6 +45,7 @@ camera:
     username: !secret foscam_user
     password: !secret foscam_pwd
 
+###########
 # Services
 wake_on_lan:
 

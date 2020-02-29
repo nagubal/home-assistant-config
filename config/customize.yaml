@@ -1,4 +1,6 @@
 ---
+person.anthony:
+  entity_picture: https://nagubal.fr/anthony.jpg
 switch.sentinelle:
   icon: mdi:shield-key
 light.lampadaire:
@@ -8,8 +10,6 @@ light.cuisine:
   icon: mdi:ceiling-light
 light.sejour:
   icon: mdi:vanity-light
-person.anthony:
-  entity_picture: https://nagubal.fr/anthony.jpg
 light.palier:
   icon: mdi:ceiling-light
 light.lampe_cuisine:
