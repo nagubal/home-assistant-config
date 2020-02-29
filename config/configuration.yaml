@@ -77,5 +77,3 @@ unifi:
 hacs:
   token: !secret hacs_github_token
 
-meteo_france:
-  - city: 'Combourg, france'
