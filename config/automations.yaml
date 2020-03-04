@@ -12,10 +12,10 @@
       topic: home/sensor/{{ trigger.payload_json.idx }}/temp
       payload_template: '{{ trigger.payload_json.svalue1 }}'
 - id: '1581261658616'
-  alias: Request location update
+  alias: Request location update Fabienne
   description: ''
   trigger:
-  - entity_id: person.anthony
+  - entity_id: device_tracker.iphone_de_fabienne
     event: enter
     platform: zone
     zone: zone.home

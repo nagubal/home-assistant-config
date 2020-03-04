@@ -8,3 +8,38 @@
   name: "Luminosité séjour"
   unit_of_measurement: 'Lux'
   state_topic: 'home/sensor/39/lux'
+
+- platform: moon
+
+- platform: sun2
+  monitored_conditions:
+    - solar_midnight
+    - astronomical_dawn
+    - nautical_dawn
+    - dawn
+    - sunrise
+    - solar_noon
+    - sunset
+    - dusk
+    - nautical_dusk
+    - astronomical_dusk
+    - daylight
+    - civil_daylight
+    - nautical_daylight
+    - astronomical_daylight
+    - night
+    - civil_night
+    - nautical_night
+    - astronomical_night
+    - elevation
+    - max_elevation
+
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'
+    - 'date_time'
+    - 'date_time_utc'
+    - 'date_time_iso'
+    - 'time_date'
+    - 'time_utc'

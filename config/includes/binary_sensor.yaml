@@ -19,3 +19,11 @@
   state_topic: "esp32_garage/binary_sensor/garage/state"
   device_class: garage_door
   unique_id: esp32_garage_reed_switch
+
+- platform: sun2
+  monitored_conditions:
+    - elevation
+    - elevation: 3
+    - elevation:
+        above: -6
+        name: Above Civil Dawn
