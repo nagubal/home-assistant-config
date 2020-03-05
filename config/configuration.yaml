@@ -21,12 +21,12 @@ recorder:
       - weblink
       - updater
     entities:
-      - sun.sun # Don't record sun data
-      - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+      - sun.sun
+      - sensor.last_boot
       - sensor.date
       - sensor.hacs
     event_types:
-      - call_service # Don't record service calls
+      - call_service
 
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
