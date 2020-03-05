@@ -11,6 +11,23 @@ homeassistant:
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
+# U^)9@o*5Xy7sY8$(
+recorder:
+  purge_keep_days: 15
+  db_url: !secret db_url
+  exclude:
+    domains:
+      - automation
+      - weblink
+      - updater
+    entities:
+      - sun.sun # Don't record sun data
+      - sensor.last_boot # Comes from 'systemmonitor' sensor platform
+      - sensor.date
+      - sensor.hacs
+    event_types:
+      - call_service # Don't record service calls
+
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 # http:
 #   base_url: example.duckdns.org:8123

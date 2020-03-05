@@ -24,3 +24,16 @@
   - data:
       message: request_location_update
     service: notify.mobile_app_iphone_6
+- id: '1583405640943'
+  alias: Notify me when garage door changes
+  description: Ouverture / fermeture de la porte de garage
+  trigger:
+  - entity_id: binary_sensor.esp32_garage_state
+    platform: state
+  condition: []
+  action:
+  - data:
+      message: La porte de garage est {% if is_state("binary_sensor.esp32_garage_state",
+        "off") -%} fermée {%- else -%} ouverte {%- endif %}
+      title: 🚪 Porte de garage
+    service: notify.mobile_app_iphone_6
