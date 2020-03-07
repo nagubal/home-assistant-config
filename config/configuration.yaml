@@ -11,7 +11,7 @@ homeassistant:
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
-# U^)9@o*5Xy7sY8$(
+# Setup mariadb as database  
 recorder:
   purge_keep_days: 15
   db_url: !secret db_url
