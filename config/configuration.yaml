@@ -46,6 +46,11 @@ mqtt:
   username: !secret broker_user
   password: !secret broker_pwd
 
+logger:
+  default: critical
+  logs:
+    homeassistant.components.http.ban: warning
+
 ##########
 # Cameras
 amcrest:
@@ -91,6 +96,6 @@ unifi:
       ssid_filter:
         - !secret ssid_filter_1
 
-hacs:
-  token: !secret hacs_github_token
+# hacs:
+#  token: !secret hacs_github_token
 
