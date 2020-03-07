@@ -9,7 +9,7 @@ steps:
       - yamllint config/
 
   - name: "HA config check"
-    image: homeassistant/home-assistant
+    image: homeassistant/qemux86-64-homeassistant:stable
     commands:
       - echo "Preparing ..."
       - cp config/.drone_secrets.yaml config/secrets.yaml
@@ -40,7 +40,7 @@ steps:
 #   - home-assistant
 # steps:
 #   - name: "HA config check: dev branch"
-#     image: homeassistant/home-assistant:dev
+#     image: homeassistant/qemux86-64-homeassistant:stable:dev
 #     pull: always
 #     failure: ignore
 #     commands:
