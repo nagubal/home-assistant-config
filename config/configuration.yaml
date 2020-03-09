@@ -32,6 +32,10 @@ recorder:
 # http:
 #   base_url: example.duckdns.org:8123
 
+discovery:
+  ignore:
+    - yeelight
+
 automation: !include automations.yaml
 sensor: !include includes/sensor.yaml
 light: !include includes/light.yaml
@@ -98,4 +102,7 @@ unifi:
 
 # hacs:
 #  token: !secret hacs_github_token
-
+yeelight:
+  devices:
+    192.168.1.185:
+      name: Yeelight
