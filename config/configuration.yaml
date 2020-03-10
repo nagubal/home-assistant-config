@@ -12,7 +12,7 @@ homeassistant:
 default_config:
 
 logger:
-  default: error 
+  default: error
   logs:
     homeassistant.components.http.ban: warning
 
@@ -40,7 +40,7 @@ recorder:
       - service_executed
       - platform_discovered
       - homeassistant_start
-      - homeassistant_stop      
+      - homeassistant_stop
       - feedreader
       - service_registered
       - component_loaded
