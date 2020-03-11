@@ -1,0 +1,13 @@
+---
+switch:
+  - platform: mqtt
+    name: "Sentinelle"
+    command_topic: "home/switch/dz_switch_198/power"
+    state_topic: "home/switch/dz_switch_198/state"
+    payload_on: "On"
+    payload_off: "Off"
+    state_on: "On"
+    state_off: "Off"
+    icon: "mdi:shield-key"
+    optimistic: true
+    retain: true

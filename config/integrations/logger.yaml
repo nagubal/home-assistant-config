@@ -1,0 +1,6 @@
+---
+logger:
+  default: error
+  logs:
+    homeassistant.components.http.ban: warning
+

@@ -1,0 +1,14 @@
+---
+amcrest:
+  - host: !secret amcrest_url
+    name: Amcrest Salon
+    username: !secret amcrest_user
+    password: !secret amcrest_pwd
+    resolution: low
+
+camera:
+  - platform: foscam
+    ip: !secret foscam_url
+    port: !secret foscam_port
+    username: !secret foscam_user
+    password: !secret foscam_pwd

@@ -1,0 +1,9 @@
+---
+samsungtv:
+  - host: !secret samsungtv_ip
+    turn_on_action:
+      - service: wake_on_lan.send_magic_packet
+        data:
+          mac: !secret samsungtv_mac
+          broadcast_address: !secret wol_broadcast_address
+
