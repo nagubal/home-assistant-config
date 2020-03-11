@@ -11,6 +11,9 @@ homeassistant:
 # Configure a default setup of Home Assistant (frontend, api, etc)
 default_config:
 
+http:
+  base_url: !secret base_url
+
 logger:
   default: error
   logs:
