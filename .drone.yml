@@ -1,5 +1,6 @@
+---
 kind: pipeline
-name: home-assistant 
+name: home-assistant
 
 steps:
   - name: yaml-linting
@@ -59,10 +60,6 @@ depends_on:
 steps:
   - name: "Telegram notification"
     image: appleboy/drone-telegram
-#    when:
-#      status:
-#        - failure
-#        - success
     settings:
       token:
         from_secret: telegram-redbeard-token
@@ -87,5 +84,5 @@ steps:
         {{/success}}
 trigger:
   status:
-    #- success
+    # - success
     - failure
