@@ -34,7 +34,9 @@ midnight_blue:
   paper-listbox-background-color: "#2E333A"
   paper-listbox-color: "var(--primary-color)"
   paper-slider-active-color: "var(--accent-color)"
-  paper-slider-container-color: "linear-gradient(var(--primary-background-color), var(--secondary-background-color)) no-repeat"
+  paper-slider-container-color: >-
+    linear-gradient(var(--primary-background-color),
+    var(--secondary-background-color)) no-repeat
   paper-slider-disabled-active-color: "var(--disabled-text-color)"
   paper-slider-disabled-secondary-color: "var(--disabled-text-color)"
   paper-slider-knob-color: "var(--accent-color)"
