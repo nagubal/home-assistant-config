@@ -1,6 +1,6 @@
 ---
 person.anthony:
-  entity_picture: https://nagubal.fr/anthony.jpg
+  entity_picture: /local/images/anthony.jpg
 switch.sentinelle:
   icon: mdi:shield-key
 light.lampadaire:
