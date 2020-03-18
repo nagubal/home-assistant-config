@@ -8,3 +8,13 @@ media_player:
           mac: !secret kodi_mac
           broadcast_address: !secret wol_broadcast_address
 
+  - platform: samsungtv_tizen
+    host: !secret samsungtv_ip 
+    port: 8002
+    name: Samsung 4K
+    mac: !secret samsungtv_mac 
+    api_key: !secret samsungtv_api_key1 
+    device_id: !secret samsungtv_deviceid 
+    source_list: '{"TV": "ST_TV", "HDMI": "ST_HDMI1"}'
+    show_channel_number: true
+    app_list: '{"Amazon Prime": "3201512006785/org.tizen.ignition", "YouTube": "111299001912"}'
