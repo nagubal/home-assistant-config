@@ -1,7 +1,7 @@
 ---
 # Setup mariadb as database
 recorder:
-  purge_keep_days: 10
+  purge_keep_days: 7
   purge_interval: 1
   db_url: !secret db_url
   exclude:
@@ -10,6 +10,8 @@ recorder:
       - weblink
       - updater
       - sun2
+      - switch
+      - light
     entities:
       - sun.sun
       - sensor.last_boot
@@ -25,7 +27,6 @@ recorder:
       - platform_discovered
       - homeassistant_start
       - homeassistant_stop
-      - feedreader
       - service_registered
       - component_loaded
       - logbook_entry

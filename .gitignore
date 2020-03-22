@@ -25,3 +25,4 @@ config/known_devices.yaml
 config/*.csr
 config/mqtt-ca.srl
 config/client.csr
+config/.pip_progress
