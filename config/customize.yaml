@@ -1,4 +1,3 @@
----
 person.anthony:
   entity_picture: /local/images/anthony.jpg
 switch.sentinelle:
@@ -33,3 +32,7 @@ binary_sensor.esp32_garage_state:
   friendly_name: Garage
 media_player.kodi:
   icon: mdi:kodi
+sensor.xiaomi_cgg1_temperature:
+  friendly_name: Cuisine
+sensor.xiaomi_cgg1_humidity:
+  friendly_name: Cuisine
