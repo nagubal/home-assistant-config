@@ -1,9 +1,0 @@
----
-unifi:
-  controllers:
-    - host: !secret unifi_ip
-      site: default
-      dont_track_wired_clients: true
-      ssid_filter:
-        - !secret ssid_filter_1
-
