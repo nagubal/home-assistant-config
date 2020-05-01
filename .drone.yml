@@ -28,7 +28,7 @@ steps:
       commit: true
       commit_message: "{{commit.message}}"
       followtags: true
-      remote: "git@github.com:nagubal/home-assistant-config.git"
+      remote: git@github.com:nagubal/home-assistant-config.git
     environment:
       GIT_PUSH_SSH_KEY:
         from_secret: git_push_ssh_key
