@@ -20,7 +20,7 @@ steps:
       - rm config/secrets.yaml
 
   - name: push-github
-    image: appleboy/drone-git-push
+    image: appleboy/drone-git-push:0.2.0-linux-amd64
     settings:
       branch: master
       author_email: "45527+nagubal@users.noreply.github.com"
