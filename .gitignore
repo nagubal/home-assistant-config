@@ -12,6 +12,7 @@ config/.cloud
 config/.storage
 config/deps
 config/tts
+config/www/images/STD2A/
 
 # Specific file ignores
 config/*.crt
