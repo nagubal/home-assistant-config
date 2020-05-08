@@ -1,6 +1,8 @@
 ---
 person.anthony:
   entity_picture: /local/images/anthony.jpg
+person.aelig:
+  entity_picture: /local/images/aelig.jpg
 switch.sentinelle:
   icon: mdi:shield-key
 light.lampadaire:

@@ -13,6 +13,7 @@ config/.storage
 config/deps
 config/tts
 config/www/images/STD2A/
+config/www/images/aelig.png
 
 # Specific file ignores
 config/*.crt
