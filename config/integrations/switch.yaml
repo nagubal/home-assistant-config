@@ -11,3 +11,8 @@ switch:
     icon: "mdi:shield-key"
     optimistic: true
     retain: true
+
+  - platform: wake_on_lan
+    name: celebdil
+    mac: F4:4D:30:6A:B8:29
+    host: 192.168.1.107
