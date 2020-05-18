@@ -12,3 +12,4 @@ homeassistant:
 
 automation: !include automations.yaml
 
+
